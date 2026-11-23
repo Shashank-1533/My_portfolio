@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Shashank Mulimani — Full Stack Java Developer based in Bangalore. Skilled in Java, Spring Boot, MySQL, and modern web technologies (HTML, CSS, JavaScript). Explore projects, skills, and get in touch.">
+    <meta name="keywords"
+        content="Shashank, Mulimani, Full Stack Developer, Java Developer, Spring Boot, MySQL, Portfolio, Web Developer, Bangalore, Tap Academy">
+    <meta name="author" content="Shashank Mulimani">
+    <meta name="robots" content="index, follow">
+
+    <title>Shashank Mulimani | Full Stack Developer Portfolio</title>
+    <link rel="icon" href="./logo.png" type="image/png">
+
+    <!-- Google Fonts — Google Sans (Product Sans) + JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Devicons CDN — tech logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════
+         NAVIGATION
+         ═══════════════════════════════════════ -->
+    <header>
+        <nav class="site-nav" id="navbar" aria-label="Primary navigation">
+            <div class="nav-container">
+                <a href="#hero" class="nav-logo" aria-label="Home">&lt;Shashank /&gt;</a>
+
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="#hero" role="menuitem" class="active">Home</a></li>
+                    <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                    <li role="none">
+                        <a href="./resm.pdf" class="nav-resume-btn" download="Shashank_Resume" role="menuitem">
+                            Resume ↓
+                        </a>
+                    </li>
+                </ul>
+
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ═══════════════════════════════════════
+             HERO SECTION
+             ═══════════════════════════════════════ -->
+        <section class="hero" id="hero" aria-label="Introduction">
+            <div class="hero-container">
+
+                <!-- Left Column -->
+                <div class="hero-left">
+                    <figure class="hero-avatar">
+                        <div class="avatar-glow" aria-hidden="true"></div>
+                        <div class="avatar-ring" aria-hidden="true"></div>
+                        <img src="./avatar.png" alt="Shashank Mulimani — Full Stack Developer portrait"
+                            width="160" height="160" loading="eager">
+                    </figure>
+
+                    <p class="hero-greeting">
+                        Hello, I'm <span class="wave" aria-hidden="true">👋</span>
+                    </p>
+                    
+                    <h1 class="hero-name">Shashank</h1>
+                    
+                    <div class="hero-role">
+                        <span class="role-line"></span>
+                        Java Full Stack Developer
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">🚀 View Projects</a>
+                        <a href="#contact" class="btn btn-outline">✉ Contact Me</a>
+                    </div>
+                </div>
+
+                <!-- Right Column (Code Editor & Compare) -->
+                <!-- Right Column (Single Code Compare Card) -->
+                <div class="hero-right">
+                    <div class="compare-container" id="hero-compare">
+                        
+                        <!-- Base Layer (Bottom): Beautiful Syntax Highlighted Code -->
+                        <div class="code-editor compare-base">
+                            <div class="editor-header">
+                                <div class="editor-dots" aria-hidden="true">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="editor-tab">
+                                    <span class="tab-icon" aria-hidden="true"></span> developer.js
+                                </span>
+                            </div>
+                            <div class="editor-body">
+                                <pre><code id="typing-code-highlighted"></code></pre>
+                            </div>
+                        </div>
+                        
+                        <!-- Overlay Layer (Top): Plain Unformatted Code -->
+                        <div class="compare-overlay" id="compare-overlay">
+                            <div class="code-editor code-editor-plain">
+                                <div class="editor-header">
+                                    <div class="editor-dots" aria-hidden="true">
+                                        <span class="dot red"></span>
+                                        <span class="dot yellow"></span>
+                                        <span class="dot green"></span>
+                                    </div>
+                                    <span class="editor-tab">
+                                        <span class="tab-icon" aria-hidden="true"></span> developer.js
+                                    </span>
+                                </div>
+                                <div class="editor-body">
+                                    <pre><code id="typing-code-plain"></code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slider Line & Handle -->
+                        <div class="compare-handle" id="compare-handle">
+                            <div class="compare-glow-1"></div>
+                            <div class="compare-glow-2"></div>
+                            <div class="compare-handle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="5" r="1"></circle>
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="12" cy="19" r="1"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             PROJECTS SECTION
+             ═══════════════════════════════════════ -->
+        <section class="projects-section" id="projects" aria-label="Featured projects">
+            <div class="container">
+
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-description">
+                        A selection of projects that showcase my skills in full-stack development.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 — WanderAI -->
+                    <article class="project-card reveal reveal-delay-1">
+                        <figure class="project-image">
+                            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop&q=80"
+                                alt="WanderAI — AI-powered travel companion" loading="lazy" width="600"
+                                height="400">
+                            <div class="project-image-gradient"></div>
+                            <span class="project-badge">
+                                <span class="badge-dot"></span> AI Travel App
+                            </span>
+                            <span class="project-date-pill">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                Dec 2025 – Jan 2026
+                            </span>
+                        </figure>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <h3>WanderAI</h3>
+                                <span class="project-type-tag">Frontend &amp; AI</span>
+                            </div>
+                            <p class="project-desc">
+                                An intelligent travel companion that harnesses AI to formulate personalized travel itineraries, route maps, and curate destination guides worldwide.
+                            </p>
+                            <ul class="project-highlights">
+                                <li><span class="bullet">▹</span> Dynamic AI itinerary generator based on user budget &amp; preferences</li>
+                                <li><span class="bullet">▹</span> Integrated interactive map exploration with real-time waypoint tracking</li>
+                                <li><span class="bullet">▹</span> Built responsive modern web UI with Vanilla JavaScript, HTML5, and fluid CSS3 animations</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag tag-js">JavaScript (ES6+)</span>
+                                <span class="tag tag-html">HTML5</span>
+                                <span class="tag tag-css">CSS3</span>
+                                <span class="tag tag-ai">REST APIs / AI</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/Shashank-1533" target="_blank" rel="noopener noreferrer" class="project-action-btn">
+                                    <span>View on GitHub</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </a>
+                                <div class="project-status">
+                                    <span class="status-pulse-dot"></span>
+                                    <span>Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 — FriendFinder -->
+                    <article class="project-card reveal reveal-delay-2">
+                        <figure class="project-image">
+                            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&fit=crop&q=80"
+                                alt="FriendFinder — social networking platform" loading="lazy"
+                                width="600" height="400">
+                            <div class="project-image-gradient"></div>
+                            <span class="project-badge">
+                                <span class="badge-dot"></span> Social Network
+                            </span>
+                            <span class="project-date-pill">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                Jan 2026 – Feb 2026
+                            </span>
+                        </figure>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <h3>FriendFinder</h3>
+                                <span class="project-type-tag">Backend &amp; ORM</span>
+                            </div>
+                            <p class="project-desc">
+                                A community networking platform connecting individuals through shared interests with smart matchmaking algorithms, secure feeds, and profile management.
+                            </p>
+                            <ul class="project-highlights">
+                                <li><span class="bullet">▹</span> Engineered intelligent matchmaking algorithm based on user interest profiles</li>
+                                <li><span class="bullet">▹</span> Architected enterprise Spring backend with robust Hibernate ORM entity mappings</li>
+                                <li><span class="bullet">▹</span> Integrated secure authentication, session handling, and real-time messaging</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag tag-spring">Spring</span>
+                                <span class="tag tag-java">Java</span>
+                                <span class="tag tag-hibernate">Hibernate ORM</span>
+                                <span class="tag tag-mysql">MySQL</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/Shashank-1533" target="_blank" rel="noopener noreferrer" class="project-action-btn">
+                                    <span>View on GitHub</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </a>
+                                <div class="project-status">
+                                    <span class="status-pulse-dot"></span>
+                                    <span>Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 — Food Delivery Application (New Flagship) -->
+                    <article class="project-card project-card-featured reveal reveal-delay-3">
+                        <figure class="project-image">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format&fit=crop&q=80"
+                                alt="Food Delivery Application — full-stack food ordering platform" loading="lazy"
+                                width="600" height="400">
+                            <div class="project-image-gradient"></div>
+                            <span class="project-badge project-badge-glow">
+                                <span class="badge-dot badge-dot-emerald"></span> Full-Stack Platform
+                            </span>
+                            <span class="project-date-pill">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                Feb 2026 – Jul 2026
+                            </span>
+                        </figure>
+                        <div class="project-body">
+                            <div class="project-header-row">
+                                <h3>Food Delivery Application</h3>
+                                <span class="project-type-tag project-type-accent">Enterprise Java</span>
+                            </div>
+                            <p class="project-desc">
+                                A high-performance full-stack food ordering platform designed with end-to-end CRUD operations, robust session security, and optimized relational database throughput.
+                            </p>
+                            <ul class="project-highlights">
+                                <li><span class="bullet">▹</span> Developed a full-stack food ordering platform with complete CRUD functionality.</li>
+                                <li><span class="bullet">▹</span> Implemented restaurant management, menu management, authentication, and order processing modules.</li>
+                                <li><span class="bullet">▹</span> Designed responsive UI and optimized database operations for better performance.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag tag-java">Java</span>
+                                <span class="tag tag-jdbc">JDBC</span>
+                                <span class="tag tag-jsp">JSP</span>
+                                <span class="tag tag-servlets">Servlets</span>
+                                <span class="tag tag-html">HTML</span>
+                                <span class="tag tag-css">CSS</span>
+                                <span class="tag tag-mysql">MySQL</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/Shashank-1533" target="_blank" rel="noopener noreferrer" class="project-action-btn">
+                                    <span>View on GitHub</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </a>
+                                <div class="project-status">
+                                    <span class="status-pulse-dot status-pulse-emerald"></span>
+                                    <span>Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             SKILLS SECTION
+             ═══════════════════════════════════════ -->
+        <section class="skills-section" id="skills" aria-label="Technical skills">
+            <div class="container">
+
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Expertise</span>
+                    <h2 class="section-title">Skills &amp; Technologies</h2>
+                    <p class="section-description">
+                        Technologies I work with to bring ideas to life.
+                    </p>
+                </div>
+
+                <div class="skills-categories">
+
+                    <!-- Frontend -->
+                    <div class="skill-category reveal">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="devicon-html5-plain" aria-hidden="true"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-css3-plain" aria-hidden="true"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-javascript-plain" aria-hidden="true"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <div class="skill-category reveal">
+                        <h3 class="skill-category-title">Languages</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="devicon-java-plain" aria-hidden="true"></i>
+                                <span>Java</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-category reveal">
+                        <h3 class="skill-category-title">Frameworks</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="devicon-spring-original" aria-hidden="true"></i>
+                                <span>Spring</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-spring-original" aria-hidden="true"></i>
+                                <span>Spring Boot</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category reveal">
+                        <h3 class="skill-category-title">Databases</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="devicon-mysql-plain" aria-hidden="true"></i>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════
+             CONTACT SECTION
+             ═══════════════════════════════════════ -->
+        <section class="contact-section" id="contact" aria-label="Contact form">
+            <div class="container">
+
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="section-description">
+                        Have a project in mind? Drop a message and let's make it happen.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <!-- Form -->
+                    <div class="contact-form-wrapper reveal">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input"
+                                    placeholder="John Doe" required autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">Mobile Number</label>
+                                <input type="tel" id="mobile" name="mobile" class="form-input"
+                                    placeholder="+91 XXXXX XXXXX" required autocomplete="tel">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input"
+                                    placeholder="john@example.com" required autocomplete="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" class="form-input" rows="4"
+                                    placeholder="Tell me about your project…"></textarea>
+                            </div>
+
+                            <div id="form-toast" class="form-toast" role="alert" aria-live="polite"></div>
+
+                            <button type="submit" class="btn btn-primary"
+                                style="width:100%;justify-content:center;">
+                                Send Message →
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Visual -->
+                    <aside class="contact-visual reveal" aria-hidden="true">
+                        <div class="floating-emojis">
+                            <span class="floating-emoji">💻</span>
+                            <span class="floating-emoji">🚀</span>
+                            <span class="floating-emoji">📧</span>
+                            <span class="floating-emoji">⭐</span>
+                            <span class="floating-emoji">👋</span>
+                            <span class="floating-emoji">🎯</span>
+                        </div>
+                        <div class="contact-tagline">
+                            <h3>Let's Build Something Amazing</h3>
+                            <p>I'm currently open for freelance work and full-time opportunities.</p>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════ -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <nav class="footer-socials" aria-label="Social media links">
+                <a href="https://www.linkedin.com/in/shashank-mulimani/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn profile">
+                    <img src="https://cdn-icons-png.flaticon.com/128/145/145807.png" alt="" width="20" height="20">
+                </a>
+                <a href="https://www.instagram.com/shashank_1533/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram profile">
+                    <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="" width="20" height="20">
+                </a>
+                <a href="https://github.com/Shashank-1533/" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub profile">
+                    <img src="https://cdn-icons-png.flaticon.com/128/733/733609.png" alt="" width="20" height="20">
+                </a>
+            </nav>
+
+            <address class="footer-info">
+                <p>Designed &amp; Built by <span class="highlight">Shashank Mulimani</span></p>
+                <p>&copy; 2026 — All rights reserved. Made with ❤️ at Tap Academy, Bangalore</p>
+                <p>
+                    <a href="mailto:mulimanishashank15@gmail.com">mulimanishashank15@gmail.com</a> ·
+                    <a href="tel:8123290657">+91 81232 90657</a>
+                </p>
+            </address>
+
+            <a href="#hero" class="back-to-top">↑ Back to Top</a>
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
